@@ -1,10 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>addition</title>
+    <script>
+        function add()
+        {
+        var num1= document.getElementById('num1').value;
+        var num2= document.getElementById('num2').value;
+        num1=parseInt(num1);
+        num2=parseInt(num2);
+        document.getElementById("Answer").innerHTML=num1/num2;
+        }
+    </script>
 </head>
-<body>
+<body style="background-color:red">
+<marquee><h1>Welcome to Division Calculator Home Page</h1></marquee>
+<center><h1 style="color:gold">Division Home Page</h1></center><br>
+<center>
+    <h3>Enter 1st input number: <input type="number" id="num1"/></h3><br>
+    <h3>Enter 2nd input number: <input type="number" id="num2"</h3><br>
+    <br><button onclick="add()">DIV</button><br>
+    <br>OUTPUT: <span style="color:GOLD" id="Answer">Result</span>
+
+</center>
 
 </body>
 </html>
